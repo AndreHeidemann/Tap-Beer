@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tap-Beer</title>    
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">    
+</head>
+<body style="background-image: url('img/background.jpg');filter: grayscale(50%);">
+    
+    <div class="container" id="titulo" style="width: 100%;">
+        <img src="img/header-beer.jpg"style="width:-webkit-fill-available;height: 150px;"></img>
+        <h4 style="text-align: center; position: absolute; top: 75px; left: 50%; transform: translate(-50%, -50%);">
+        Tap-Beer
+        </h4>
+        <a class="btn btn-danger" href="torneira.html" style="position: absolute; top: 125px; left: 50%; transform: translate(-50%, -50%);">Torneira</a>
+        <ul class="nav nav-pills nav-fill bg-warning" style="border-radius: 25px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Menu inicial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cadastro.html">Cadastro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="alteracao.html">Alteração</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="exclusao.html">Exclusão</a>
+            </li>
+        </ul>        
+        <!-- Consultar saldo no cartão -->
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <h4 style="text-align:center;background-color:orange;border-radius: 25px;">Consultar saldo:</h4>
+                <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Cartão do usuário</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div> 
+            </div>
+            <div class="col-md-4">
+                <button style="bottom: 330px; position: absolute;" class="btn btn-warning">Consultar</button>
+            </div>
+        </div>
+        <div class="row mt-auto">
+            <div class="col-md-4">
+                <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Saldo</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" data-type="currency" disabled>
+                </div> 
+            </div>        
+        </div>       
+        <!-- Adicionar saldo no cartão -->
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <h4 style="text-align:center;background-color:orange;border-radius: 25px;">Adicionar saldo:</h4>
+                <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Cartão do usuário</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div> 
+            </div>
+            <div class="col-md-4">
+                <button style="bottom: 182px; position: absolute;" class="btn btn-warning">Adicionar</button>
+            </div>
+        </div>
+        <div class="row mt-auto">
+            <div class="col-md-4">
+                <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Valor</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" data-type="currency">
+                </div> 
+            </div>        
+        </div>
+        <!-- Verificar saldo da torneira -->
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <h4 style="text-align:center;background-color:orange;border-radius: 25px;">Verificar saldo:</h4>
+                <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">ID Torneira</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div> 
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-warning" style="bottom: 32px; position: absolute;">Verificar</button>
+            </div>
+        </div>
+        <div class="row mt-auto">
+            <div class="col-md-4">
+                <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Saldo</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" data-type="currency">
+                </div> 
+            </div>        
+        </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/axios.min.js"></script>
+</body>
+</html>

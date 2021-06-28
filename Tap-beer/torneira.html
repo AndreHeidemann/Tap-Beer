@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tap-Beer</title>    
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">    
+</head>
+<body style="background-image: url('img/background.jpg');filter: grayscale(50%);">
+    
+    <div class="container" id="titulo" style="width: 100%;">
+        <img src="img/header-beer.jpg"style="width:-webkit-fill-available;height: 150px;"></img>
+        <h4 style="text-align: center; position: absolute; top: 75px; left: 50%; transform: translate(-50%, -50%);">Tap-Beer</h4>
+        <a class="btn btn-danger" href="index.html" style="position: absolute; top: 125px; left: 50%; transform: translate(-50%, -50%);">Menu de Serviço</a>        
+    </div>
+    <div class="form">
+        <div class="note mt-3">
+            <h1 style="text-align:center"><strong>Cerveja</strong></h1>
+        </div>
+
+        <div class="form-content">
+            <div class="row col-lg-6 offset-lg-3">
+                <div class="col-md-6  justify-content-center">
+                    <div class="form-group"><strong>Valor</strong>
+                        <input type="text" class="form-control" placeholder="Valor" value="R$10,00/L"disabled/>
+                    </div><br>   
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Número do cartão Tap-Beer" value=""/>
+                    </div><br>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Total a pagar" value=""disabled/>
+                    </div><br>
+                    <div class="container my-3 bg-light">
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn btn-success btnSubmit">Encher</button>                                          
+                        </div>
+                    </div>                                           
+                </div>                
+                    <div class="col-md-6  justify-content-center">
+                        <img src="img/produto.jpg"></img>    
+                </div>                   
+            </div>                
+        </div>            
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/axios.min.js"></script>
+</body>
+</html>

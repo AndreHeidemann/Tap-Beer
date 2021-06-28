@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tap-Beer</title>    
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">    
+</head>
+<body style="background-image: url('img/background.jpg');filter: grayscale(50%);">
+    
+    <div class="container" id="titulo" style="width: 100%;">
+        <img src="img/header-beer.jpg"style="width:-webkit-fill-available;height: 150px;"></img>
+        <h4 style="text-align: center; position: absolute; top: 75px; left: 50%; transform: translate(-50%, -50%);">
+        Tap-Beer
+        </h4>
+        <a class="btn btn-danger" href="torneira.html" style="position: absolute; top: 125px; left: 50%; transform: translate(-50%, -50%);">Torneira</a>
+        <ul class="nav nav-pills nav-fill bg-warning" style="border-radius: 25px;">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Menu inicial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cadastro.html">Cadastro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="alteracao.html">Alteração</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="exclusao.html">Exclusão</a>
+            </li>
+          </ul>      
+    </div>
+    <div class="container register-form">
+        <div class="form">
+            <div class="note mt-3">
+                <h4 style="text-align:center">Alteração</h4>
+            </div>
+
+            <div class="form-content">
+                <div class="row col-lg-6 offset-lg-3">
+                    <div class="col-md-12  justify-content-center">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Número do cartão Tap-Beer" value=""/>
+                        </div><br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="CPF" value=""/>
+                        </div><br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nome completo" value=""/>
+                        </div><br>
+                        <div class="container my-3">
+                            <div class="col-md-12 text-center">
+                                <button type="button" class="btn btn-success btnSubmit">Alterar</button>                                          
+                            </div>
+                        </div>                        
+                    </div>                    
+                </div>                
+            </div>            
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/axios.min.js"></script>
+</body>
+</html>
